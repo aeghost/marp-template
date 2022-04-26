@@ -1,0 +1,40 @@
+/* Author: Matthieu GOSSET - matthieu.gosset.dev@outlook.com
+   Purpose: Make a generic and easy theme personnalisation for Marp compatible presentation */
+
+/* Importing another Marp prebuild theme
+    Available by default: 'classic', 'gaia'
+    'classic': Classic theme is really old-school presentation theme
+    'gaia': Modern and classy theme, but can impress less text than Classic theme
+*/
+@import 'gaia';
+
+/* Global color variable */
+$slidesBG: #302e2e;
+$slidesFont: #ed700b;
+
+/* Override default values */
+section {
+  background: #def;
+}
+
+/* Define a header using a classic company logo */
+header {
+  background-image: url("./svg/colour-logo.svg");
+  background-position: left;
+  left: 20px;
+  background-repeat: no-repeat;
+}
+
+/* Define a footer using classic company picto (lil logo) */
+footer {
+  color: $slidesFont !important;
+  background-image: url("./svg/file_type_ocaml_icon_130288.svg");
+  background-size: 61px;
+  margin-right: 4%;
+  margin-left: 2%;
+  background-position: right;
+  background-repeat: no-repeat;
+  border-left-color: $slidesFont;
+  border-left-width: 2px;
+  border-left-style: solid;
+}
